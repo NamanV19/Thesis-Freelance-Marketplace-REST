@@ -1,0 +1,9 @@
+D:\Thesis\FreelanceMarketplace\Common\bin\Release\netcoreapp3.1\Common.deps.json
+D:\Thesis\FreelanceMarketplace\Common\bin\Release\netcoreapp3.1\Common.dll
+D:\Thesis\FreelanceMarketplace\Common\bin\Release\netcoreapp3.1\Common.pdb
+D:\Thesis\FreelanceMarketplace\Common\obj\Release\netcoreapp3.1\Common.csprojAssemblyReference.cache
+D:\Thesis\FreelanceMarketplace\Common\obj\Release\netcoreapp3.1\Common.AssemblyInfoInputs.cache
+D:\Thesis\FreelanceMarketplace\Common\obj\Release\netcoreapp3.1\Common.AssemblyInfo.cs
+D:\Thesis\FreelanceMarketplace\Common\obj\Release\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
+D:\Thesis\FreelanceMarketplace\Common\obj\Release\netcoreapp3.1\Common.dll
+D:\Thesis\FreelanceMarketplace\Common\obj\Release\netcoreapp3.1\Common.pdb

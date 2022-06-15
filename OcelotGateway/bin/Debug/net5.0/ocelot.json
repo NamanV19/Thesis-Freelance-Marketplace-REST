@@ -1,0 +1,325 @@
+﻿{
+  "Routes": [
+    // Profile Service - Buyer
+    // POST
+    {
+      "DownstreamPathTemplate": "/api/v1/Buyer",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44366"
+        }
+      ],
+      "UpstreamPathTemplate": "/Buyer",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    // GET{id} PUT{id} DELETE{id}
+    {
+      "DownstreamPathTemplate": "/api/v1/Buyer/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44366"
+        }
+      ],
+      "UpstreamPathTemplate": "/Buyer/{id}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ]
+    },
+    // GET (AGGREGATE)
+    {
+      "DownstreamPathTemplate": "/api/v1/Buyer",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44366"
+        }
+      ],
+      "UpstreamPathTemplate": "/Buyers",
+      "UpstreamHttpMethod": [ "GET" ],
+      "key": "buyers"
+    },
+
+    // Profile Service - Freelancer
+    // POST
+    {
+      "DownstreamPathTemplate": "/api/v1/Freelancer",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44366"
+        }
+      ],
+      "UpstreamPathTemplate": "/Freelancer",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Freelancer/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44366"
+        }
+      ],
+      "UpstreamPathTemplate": "/Freelancer/{id}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ]
+    },
+    // GET (AGGREGATE)
+    {
+      "DownstreamPathTemplate": "/api/v1/Freelancer",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44366"
+        }
+      ],
+      "UpstreamPathTemplate": "/Freelancers",
+      "UpstreamHttpMethod": [ "GET" ],
+      "key": "freelancers"
+    },
+    // GET (AGGREGATE) - Nav Freelancers
+    {
+      "DownstreamPathTemplate": "/api/v1/Freelancer/Nav",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44366"
+        }
+      ],
+      "UpstreamPathTemplate": "/FreelancersNav",
+      "UpstreamHttpMethod": [ "GET" ],
+      "key": "freelancersNav"
+    },
+    // Simple Login
+    {
+      "DownstreamPathTemplate": "/api/v1/Login",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44366"
+        }
+      ],
+      "UpstreamPathTemplate": "/Login",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    // Profile Service - Skill
+    {
+      "DownstreamPathTemplate": "/api/v1/Skill",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44366"
+        }
+      ],
+      "UpstreamPathTemplate": "/Skill",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Skill/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44366"
+        }
+      ],
+      "UpstreamPathTemplate": "/Skill/{id}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ]
+    },
+
+    // Profile Service - FreelancerSkill
+    {
+      "DownstreamPathTemplate": "/api/v1/FreelancerSkill",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44366"
+        }
+      ],
+      "UpstreamPathTemplate": "/FreelancerSkill",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/FreelancerSkill/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44366"
+        }
+      ],
+      "UpstreamPathTemplate": "/FreelancerSkill/{id}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ]
+    },
+
+    // Order Service - Order
+    // POST
+    {
+      "DownstreamPathTemplate": "/api/v1/Order",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44388"
+        }
+      ],
+      "UpstreamPathTemplate": "/Order",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Order/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44388"
+        }
+      ],
+      "UpstreamPathTemplate": "/Order/{id}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ]
+    },
+    // GET AGGREGATE
+    {
+      "DownstreamPathTemplate": "/api/v1/Order",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44388"
+        }
+      ],
+      "UpstreamPathTemplate": "/Order",
+      "UpstreamHttpMethod": [ "GET" ],
+      "key": "orders"
+    },
+
+
+    // Order Service - Payment
+    {
+      "DownstreamPathTemplate": "/api/v1/Payment",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44388"
+        }
+      ],
+      "UpstreamPathTemplate": "/Payment",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Payment/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44388"
+        }
+      ],
+      "UpstreamPathTemplate": "/Payment/{id}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ]
+    },
+
+    // Order Service - Review
+    {
+      "DownstreamPathTemplate": "/api/v1/Review",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44388"
+        }
+      ],
+      "UpstreamPathTemplate": "/Review",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Review/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44388"
+        }
+      ],
+      "UpstreamPathTemplate": "/Review/{id}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ]
+    },
+
+    // Catalog Service
+    // POST
+    {
+      "DownstreamPathTemplate": "/api/v1/Catalog",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44350"
+        }
+      ],
+      "UpstreamPathTemplate": "/Catalog",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    // GET{id}, PUT{id}, DELETE{id}
+    {
+      "DownstreamPathTemplate": "/api/v1/Order/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44350"
+        }
+      ],
+      "UpstreamPathTemplate": "/Catalog/{id}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ]
+    },
+    // GET (AGGREGATE)
+    {
+      "DownstreamPathTemplate": "/api/v1/Catalog",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44350"
+        }
+      ],
+      "UpstreamPathTemplate": "/Catalogs",
+      "UpstreamHttpMethod": [ "GET" ],
+      "key": "catalogs"
+    }
+  ],
+
+  // Aggregate Routes
+  "Aggregates": [
+    {
+      "RouteKeys": [
+        "buyers",
+        "catalogs"
+      ],
+      "UpstreamPathTemplate": "/GetBuyersAndCatalogs",
+      "Aggregator": "BuyersAndCatalogsAggregator"
+    },
+    {
+      "RouteKeys": [
+        "orders",
+        "freelancersNav",
+        "catalogs"
+      ],
+      "UpstreamPathTemplate": "/GetOrderDetails",
+      "Aggregator": "OrderDetailsAggregator"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl":  "https://localhost:44376"
+  }
+}
